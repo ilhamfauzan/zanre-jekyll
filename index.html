@@ -36,9 +36,8 @@ layout: "wrapper"
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡉⠒⠦⠤⠤⢤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣓⠀
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡌
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣍
-    <p>hi! i'm a computer science student, sometimes i write a blog&mdash;sometimes i write code. <br>welcome to my website!! nothing much to see here at the moment</p>
+    <p>Hey! i'm Ilham Fauzan, a computer science student based in Bandung, Indonesia. <br> sometimes i write a blog, sometimes i write code. <br>nothing much to see here at the moment</p>
 
-    <p>let's connect!</p>
     <ul>
       <li><a href="mailto:i@zan.re">Email</a>: i@zan.re</li>
       <li><a rel="me" href="https://t.me/@ilhamfauzan" target="_blank">Telegram</a>: @ilhamfauzan</li>
@@ -50,12 +49,12 @@ layout: "wrapper"
     <h2>Blog</h2>
     <ul>
       {% for post in site.posts %}
-        <li>{{ post.date | date: "%Y-%m-%d" }}: <a href="{{ post.url }}" target="_blank">{{ post.title }}</a></li>
+        {% unless post.hidden %}
+          <li>{{ post.date | date: "%Y-%m-%d" }}: <a href="{{ post.url }}" target="">{{ post.title }}</a></li>
+        {% endunless %}
       {% endfor %}
     </ul>
     <h2>Projects</h2>
     <ul>
       <li>i'll update this later, i promise.</li>
     </ul>
-    <h2>Gallery</h2>
-    <p>should i post here? come back later.</p>

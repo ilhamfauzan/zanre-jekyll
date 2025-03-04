@@ -1,9 +1,78 @@
----
-layout: "wrapper"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<br><center>‼️ this website is still under construction ‼️ <br> <br> </center>
-    ⠀⠀⠀⠀⢀⡟⠁⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.title {
+  margin: 10px;
+}
+
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.profile-table td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+.label {
+  font-weight: bold;
+  width: 150px;
+  color: black;
+}
+
+.value {
+  color: black;
+}
+
+.profile-table a {
+  color: black;
+  text-decoration: underline;
+}
+
+.profile-table a:hover {
+  text-decoration: underline;
+}
+
+.profile-table ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-table ul li {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+    <b class="label">zan.re / temp page</b> <br>
+    <span class="value">Ilham Fauzan</span> <br> <br>
+      <pre>    ⠀⠀⠀⠀⢀⡟⠁⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀
 ⠀⠀⠀⠀⡾⠃⢴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠀⠀⠀
 ⠀⠀⠀⣸⠁⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀
 ⠀⠀⠀⡇⡀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀
@@ -35,25 +104,36 @@ layout: "wrapper"
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡉⠒⠦⠤⠤⢤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣓⠀
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡌
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣍
-    <p>Hey! i'm Ilham Fauzan, a computer science student based in Bandung, Indonesia. <br> sometimes i write a blog, sometimes i write code. <br>nothing much to see here at the moment</p>
-
-    <ul>
-      <li><a href="mailto:i@zan.re">Email</a>: i@zan.re</li>
-      <br>
-      <li><a rel="me" href="https://github.com/ilhamfauzan" target="_blank">GitHub</a>: @ilhamfauzan</li>
-      <li><a rel="me" href="https://linkedin.com/in/ilhamfauzan" target="_blank">LinkedIn</a>: @ilhamfauzan</li>
-      <li><a rel="me" href="https://instagram.com/ilhamfze" target="_blank">Instagram</a>: @ilhamfze</li>
-    </ul>
-    <h2>Blog</h2>
-    <ul>
-      {% for post in site.posts %}
-        {% unless post.hidden %}
-          <li>{{ post.date | date: "%Y-%m-%d" }}: <a href="{{ post.url }}" target="">{{ post.title }}</a></li>
-        {% endunless %}
-      {% endfor %}
-    </ul>
-    <h2>Projects</h2>
-    <ul>
-      <li>i'll update this later, i promise.</li>
-    </ul>
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣍</pre>
+    </div>
+      </tr>
+    <table class="profile-table">
+      <tr>
+        <td class="label">About</td>
+        <td class="value">zan.re is cs student located in Bandung</td>
+      </tr>
+      <tr>
+        <td class="label">Contact</td>
+        <td class="value">
+          <a href="mailto:work@zan.re" target="_blank">email</a> <br> 
+          <a href="https://github.com/ilhamfauzan" target="_blank">github</a> <br>
+          <a href="https://linkedin.com/in/ilhamfauzan" target="_blank">linkedin</a> <br>
+          <a href="https://t.me/ilhamfauzan" target="_blank">telegram</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="label">Experiments</td>
+        <td class="value">
+          <ul>
+            <li>2025</li>
+            <li>personal website - wip</li>
+            <li><a href="https://i.zan.re">[view]</a></li>
+            <br>
+            <li>will update later ...</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
